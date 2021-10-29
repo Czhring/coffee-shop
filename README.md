@@ -10,8 +10,8 @@
 Building an coffee shop webite with the list of coffee with the informations about the  description and ingredients. Customer can add to the cart for check out.
 
 ## API
-
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+Not sure it is enought informtion but I wasn't able to find another api that relate to coffee
+ 
 https://api.sampleapis.com/coffee/hot
 https://api.sampleapis.com/coffee/iced
 
@@ -32,6 +32,9 @@ https://api.sampleapis.com/coffee/iced
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 
+![WechatIMG11](https://user-images.githubusercontent.com/92180822/139502323-d5755eca-7c8e-4d4c-b373-b487a11246e6.jpeg)
+![WechatIMG10](https://user-images.githubusercontent.com/92180822/139502335-bf7e245e-ee8d-42ef-bd58-ad76d274c883.jpeg)
+![WechatIMG9](https://user-images.githubusercontent.com/92180822/139502385-aaa987b6-6ebb-4d3a-932b-d26ef7998580.jpeg)
 
 
 ### MVP/PostMVP - 5min
@@ -39,13 +42,15 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
+-Building up the structure 
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 
-- Add localStorage or firebase for storage
+- Add CSS
+- 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -56,16 +61,23 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Home | Main Page with all the information | 
+| Hot | Hot Drink list | 
+| Cold | Cold Drink List | 
+| Cart | What you add to your cart |
+| Description  | Name of the coffee and information about it |
+| Footer |  | 
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+|  Set up the components | L | 1 hrs| hrs | hrs |
+| Make an connection with each other | M | 2hrs| hrs | hrs |
+|  Set up the structure for each page | H | 2 hrs| hrs | hrs |
+|  Make API Wokring | H | 3 hrs| hrs | hrs |
+|  Let API working on all the page  | H | 3 hrs| hrs | hrs |
+| Total | H | 11hrs| hrs | hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
