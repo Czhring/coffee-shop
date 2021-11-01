@@ -10,7 +10,6 @@
 Building an coffee shop webite with the list of coffee with the informations about the  description and ingredients. Customer can add to the cart for check out.
 
 ## API
-Not sure it is enought informtion but I wasn't able to find another api that relate to coffee
  
 https://api.sampleapis.com/coffee/hot
 https://api.sampleapis.com/coffee/iced
