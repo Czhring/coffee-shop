@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import HotDescription from "../Description/HotDescription";
+import {Link} from 'react-router-dom'
 
 function Hot (props) {
     const [hotList, setHotList]=useState([]);
@@ -16,6 +17,7 @@ function Hot (props) {
     }
     useEffect(()=> {
         makeHotListCall()
+        console.log()
     },[])
 
     const handleHotClick = (title) =>{
@@ -24,7 +26,7 @@ function Hot (props) {
 
 
    const hotDrinkList = hotList.map(hot =>{
-    return <p onClick= {()=> handleHotClick(hot.title)}>{hot.title}</p>
+    return <p onClick= {()=> handleHotClick(hot.title)}><Link to = {"/hot/"+ hot.title}>{hot.title} </Link></p>
 })
 
     return <div>

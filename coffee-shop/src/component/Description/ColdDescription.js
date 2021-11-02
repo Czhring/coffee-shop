@@ -1,15 +1,17 @@
 function ColdDescription (props) {
 
-    const selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
+    // const selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
 
     let coffeeDetail = ''
-    if(props.title){
+    let selectedCoffee = ''
+    if(props.title && props.coldDrinkList[0]){
+        selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
         coffeeDetail = 
         <div>
             <h3>{props.title}</h3>
             <p>{selectedCoffee.description}</p>
             <p>{selectedCoffee.ingredients}</p>
-            <button onClick={()=>props.addCoffeeToCart()}>Add to Cart</button>
+            <button onClick={()=>props.addDrinkToCart(selectedCoffee)}>Add to Cart</button>
         </div>
     }
     return <div>

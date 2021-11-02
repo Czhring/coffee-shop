@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import ColdDescription from "../Description/ColdDescription";
-
+import {Link} from 'react-router-dom'
 
 function Cold (props) {
     const [coldList, setColdList]=useState([]);
@@ -21,7 +21,7 @@ function Cold (props) {
     }
 
     const coldDrinkList = coldList.map(cold =>{
-        return <p onClick = {() => handleColdClick(cold.title)}>{cold.title}</p>
+        return <p onClick = {() => handleColdClick(cold.title)}><Link to = {"/iced/"+ cold.title}>{cold.title}</Link></p>
     })
     return <div>
         <h2>Cold Drink</h2>
