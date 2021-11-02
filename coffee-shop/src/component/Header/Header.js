@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link ,Route}  from 'react-router-dom';
+import {Link ,Route, Switch}  from 'react-router-dom';
 import Cart from '../Cart/Cart';
 import Cold from '../Cold/Cold';
 import Home from '../Home/Home';
@@ -20,12 +20,14 @@ function Header () {
         </nav>
 
         <main>
-        <Route exact path ='/' component = {Home}/>
-        <Route exact path = '/hot' component = {Hot}/>
-        <Route exact path = '/hot/:name' component = {HotDescription}/>
-        <Route exact path = '/iced' component ={Cold}/>
-        <Route exact path = '/iced/:name' component ={ColdDescription}/>
-        <Route exact path = '/cart' component = {Cart} />
+        <Switch>
+            <Route exact path ='/' component = {Home}/>
+            <Route exact path = '/hot' component = {Hot}/>
+            {/* <Route path = '/hot/:name' component = {HotDescription}/> */}
+            <Route exact path = '/iced' component ={Cold}/>
+            {/* <Route path = '/iced/:name' component ={ColdDescription}/> */}
+            <Route exact path = '/cart' component = {Cart} />
+        </Switch>
         </main>
     </div>)
 }

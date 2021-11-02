@@ -1,6 +1,4 @@
 function HotDescription (props) {
-
-    console.log(props)
     // const selectedCoffee = props.hotDrinkList.find(coffee  => coffee.title === props.title);
 
     

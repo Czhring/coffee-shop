@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import ColdDescription from "../Description/ColdDescription";
-import {Link} from 'react-router-dom'
+import {Link,Route} from 'react-router-dom'
 
 function Cold (props) {
     const [coldList, setColdList]=useState([]);
@@ -26,7 +26,9 @@ function Cold (props) {
     return <div>
         <h2>Cold Drink</h2>
         {coldDrinkList}
-        <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>
+        <Route path = '/iced/:name' render={() => <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>}/>
+
+        {/* <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/> */}
         </div>
 }
 
