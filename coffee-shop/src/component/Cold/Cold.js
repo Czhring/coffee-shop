@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import ColdDescription from "../Description/ColdDescription";
 
 
-function Cold () {
+function Cold (props) {
     const [coldList, setColdList]=useState([]);
     const [selectCold,setSelectCold] = useState('');
 
@@ -26,7 +26,7 @@ function Cold () {
     return <div>
         <h2>Cold Drink</h2>
         {coldDrinkList}
-        <ColdDescription title={selectCold} coldDrinkList = {coldList}/>
+        <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>
         </div>
 }
 

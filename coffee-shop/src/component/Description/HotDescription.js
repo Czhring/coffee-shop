@@ -1,5 +1,5 @@
 function HotDescription (props) {
-
+    console.log(props)
     const selectedCoffee = props.hotDrinkList.find(coffee  => coffee.title === props.title);
 
     let coffeeDetail = ''
@@ -9,7 +9,7 @@ function HotDescription (props) {
             <h3>{props.title}</h3>
             <p>{selectedCoffee.description}</p>
             <p>{selectedCoffee.ingredients}</p>
-            <button onClick={()=>props.addCoffeeToCart()}>Add to Cart</button>
+            <button onClick={()=>props.addDrinkToCart()}>Add to Cart</button>
         </div>
     }
 
