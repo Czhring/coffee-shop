@@ -3,9 +3,9 @@ function ColdDescription (props) {
     // const selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
 
     let coffeeDetail = ''
-    let selectedCoffee = ''
+    
     if(props.title && props.coldDrinkList[0]){
-        selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
+        let selectedCoffee = props.coldDrinkList.find(coffee  => coffee.title === props.title);
         coffeeDetail = 
         <div>
             <h3>{props.title}</h3>

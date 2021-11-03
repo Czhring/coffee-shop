@@ -1,24 +1,32 @@
+import { useEffect, useState } from "react"
+
+
 function HotDescription (props) {
-    // const selectedCoffee = props.hotDrinkList.find(coffee  => coffee.title === props.title);
+    const [hotCoffeeDetail,setHotCoffeeDetail]=useState([])
+  
 
-    
-
-
-    
+    const makeDetailCall = () =>{
+        fetch(`https://api.sampleapis.com/coffee/hot/${props.match.params.id}`)
+        .then((res) => res.json())
+        .then((data)=>{
+            setHotCoffeeDetail(data)
+        })
+    }
+    useEffect(()=> {
+        makeDetailCall()
+    },[])
 
     let coffeeDetail = ''
-    let selectedCoffee = ''
-    if(props.title && props.hotDrinkList[0]){
-        selectedCoffee = props.hotDrinkList.find(coffee  => coffee.title === props.title)
-        coffeeDetail = 
+    if(props.match.params.id)
+            coffeeDetail = 
         <div>
-            <h3>{props.title}</h3>
-            <p>{selectedCoffee.description}</p>
-            <p>{selectedCoffee.ingredients}</p>
-            <button onClick={()=>props.addDrinkToCart(selectedCoffee)}>Add to Cart</button>
+            <h1>{hotCoffeeDetail.title}</h1>
+            <p>{hotCoffeeDetail.description}</p>
+            <p>{hotCoffeeDetail.ingredients}</p>
+            <button onClick={()=>props.addDrinkToCart()}>Add to Cart</button>
         </div>
-    }
-
+    
+    
 
     return <div>
             {coffeeDetail}

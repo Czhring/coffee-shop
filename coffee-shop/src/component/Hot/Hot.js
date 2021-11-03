@@ -4,7 +4,7 @@ import {Link,Route} from 'react-router-dom'
 
 function Hot (props) {
     const [hotList, setHotList]=useState([]);
-    const [selectHot,setSelectHot] = useState('');
+    const [selectHot,setSelectHot] = useState(null);
 
     
 
@@ -12,6 +12,7 @@ function Hot (props) {
         fetch("https://api.sampleapis.com/coffee/hot")
         .then((res) => res.json())
         .then((data)=>{
+            console.log(data)
             setHotList(data)
         })
     }
@@ -23,16 +24,15 @@ function Hot (props) {
         setSelectHot(title)
     }
 
-
+    // 
    const hotDrinkList = hotList.map(hot =>{
-    return <p onClick= {()=> handleHotClick(hot.title)}><Link to = {"/hot/"+ hot.title}>{hot.title} </Link></p>
+    return <p onClick= {()=> handleHotClick(hot.id)}><Link to = {"/hot/"+ hot.id}>{hot.title}</Link></p>
 })
-
     return <div>
         <h2>Hot Drink</h2>
         {hotDrinkList}
-        <Route path = '/hot/:name' render={() => <HotDescription title={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/>}/>
-        {/* <HotDescription title={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/> */}
+        {/* <Route path = '/hot/:name' render={() => <HotDescription title={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/>}/> */}
+        {/* <HotDescription id={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/> */}
         </div>
 }
 

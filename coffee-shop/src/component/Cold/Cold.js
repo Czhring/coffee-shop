@@ -26,9 +26,9 @@ function Cold (props) {
     return <div>
         <h2>Cold Drink</h2>
         {coldDrinkList}
-        <Route path = '/iced/:name' render={() => <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>}/>
+        {/* <Route path = '/iced/:name' render={() => <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>}/> */}
 
-        {/* <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/> */}
+        <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>
         </div>
 }
 

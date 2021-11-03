@@ -6,7 +6,7 @@ function Cart (props){
         return(
             <div>
             <h3>{coffee.title}</h3>
-            <button onClick={()=>props.removeDrinkFromList(index)}>Remove from Cart</button>
+            <button onClick={()=>props.removeDrinkFromList(index)}> Delect</button>
         </div>)
         })
     }
