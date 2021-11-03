@@ -8,9 +8,22 @@ import Cold from './component/Cold/Cold';
 import Cart from './component/Cart/Cart';
 import HotDescription from './component/Description/HotDescription';
 import ColdDescription from './component/Description/ColdDescription';
+import { useState } from "react/cjs/react.development"
 
 
 function App() {
+  const [drinkList, setDrinkList] =useState([]);
+
+  const addDrinkToCart = (drink) =>{
+      setDrinkList([...drinkList,drink])
+  }
+
+  const removeDrinkFromList =(indexToRemove) =>{
+      let newList = [...drinkList]
+      newList.splice(indexToRemove,1);
+
+      setDrinkList(newList)
+  }
   return (
     <div className="App">
         <Header />

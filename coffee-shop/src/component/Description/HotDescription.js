@@ -5,7 +5,7 @@ function HotDescription (props) {
     const [hotCoffeeDetail,setHotCoffeeDetail]=useState([])
   
 
-    const makeDetailCall = () =>{
+    const makeHotDetailCall = () =>{
         fetch(`https://api.sampleapis.com/coffee/hot/${props.match.params.id}`)
         .then((res) => res.json())
         .then((data)=>{
@@ -13,7 +13,7 @@ function HotDescription (props) {
         })
     }
     useEffect(()=> {
-        makeDetailCall()
+        makeHotDetailCall()
     },[])
 
     let coffeeDetail = ''

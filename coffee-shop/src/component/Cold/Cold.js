@@ -21,14 +21,13 @@ function Cold (props) {
     }
 
     const coldDrinkList = coldList.map(cold =>{
-        return <p onClick = {() => handleColdClick(cold.title)}><Link to = {"/iced/"+ cold.title}>{cold.title}</Link></p>
+        return <p onClick = {() => handleColdClick(cold.id)}><Link to = {"/iced/"+ cold.id}>{cold.title}</Link></p>
     })
     return <div>
         <h2>Cold Drink</h2>
         {coldDrinkList}
         {/* <Route path = '/iced/:name' render={() => <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>}/> */}
-
-        <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/>
+        {/* <ColdDescription title={selectCold} coldDrinkList = {coldList} addDrinkToCart={props.addDrinkToCart}/> */}
         </div>
 }
 
