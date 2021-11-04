@@ -1,0 +1,21 @@
+
+h2{
+    margin-top:20px;
+    color:black;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 60px;
+}
+a{
+    color: black;
+    font-family: Stencil Std, fantasy;
+    font-size: 28px;
+}
+a:hover{
+    background-color: lightslategray;
+}
+img{
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 75%;
+}

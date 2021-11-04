@@ -40,7 +40,7 @@ function App() {
             <Route exact path= '/hot' component={Hot}/>
             <Route path='/hot/:id' render={() => <HotDescription addDrinkToCart={addDrinkToCart}/>}/>
             <Route exact path= '/iced' component={Cold}/>
-            <Route path='/iced/:id' render={() => <HotDescription addDrinkToCart={addDrinkToCart}/>}/>
+            <Route path='/iced/:id' render={() => <ColdDescription addDrinkToCart={addDrinkToCart}/>}/>
             <Route exact path='/cart' render={() => <Cart removeDrinkFromList={removeDrinkFromList} drink={drinkList}/>}/>
         </Switch>
         <Footer />

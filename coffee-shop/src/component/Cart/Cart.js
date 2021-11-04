@@ -1,6 +1,11 @@
 import Button from 'react-bootstrap/Button'
+import './Cart.css'
+
 function Cart (props){
     console.log(props)
+
+
+
     let myDrink = ''
     if(props.drink){
         myDrink = props.drink.map((coffee , index) => {

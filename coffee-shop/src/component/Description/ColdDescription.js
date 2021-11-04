@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
+import './Description.css'
 function ColdDescription (props) {
         const [icedCoffeeDetail,setIcedCoffeeDetail]=useState([])
   

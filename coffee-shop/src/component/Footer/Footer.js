@@ -1,14 +1,21 @@
 import  Navbar from 'react-bootstrap/Navbar';
 import { Container} from 'react-bootstrap';
+import './Footer.css'
+
 function Footer () {
     return (
-    <Container>
-        <Navbar sticky= "bottom" expand="lg" variant="light" bg="light">
+    <div className='footer'>
+      <Container>
+        <Navbar expand="lg" variant="dark" bg="dark">
           <Container>
-            <Navbar.Brand>CONNECT WITH US :(510)-***-8888</Navbar.Brand>
+            <Navbar.Brand>
+              <p>CONNECT WITH US :(510)-***-8888</p>
+            </Navbar.Brand>
           </Container>
         </Navbar>
-      </Container>)
+        </Container>
+      </div>
+    )      
 }
 
 

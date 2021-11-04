@@ -5,9 +5,9 @@ import { useState } from "react/cjs/react.development"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
+import './Home.css'
 function Home () {
-    let image = "https://image.freepik.com/free-vector/espresso-coffee-cup-coffee-beans_79603-1038.jpg"
+    let image = "https://img0.baidu.com/it/u=1253245222,4073951074&fm=26&fmt=auto"
     return (
     <div>
         <Container fluid >
