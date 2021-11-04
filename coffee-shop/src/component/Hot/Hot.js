@@ -12,7 +12,6 @@ function Hot (props) {
         fetch("https://api.sampleapis.com/coffee/hot")
         .then((res) => res.json())
         .then((data)=>{
-            console.log(data)
             setHotList(data)
         })
     }
@@ -24,15 +23,14 @@ function Hot (props) {
         setSelectHot(title)
     }
 
-    // 
+
    const hotDrinkList = hotList.map(hot =>{
     return <p onClick= {()=> handleHotClick(hot.id)}><Link to = {"/hot/"+ hot.id}>{hot.title}</Link></p>
 })
     return <div>
         <h2>Hot Drink</h2>
         {hotDrinkList}
-        {/* <Route path = '/hot/:name' render={() => <HotDescription title={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/>}/> */}
-        {/* <HotDescription id={selectHot} hotDrinkList = {hotList} addDrinkToCart={props.addDrinkToCart}/> */}
+        {/* <HotDescription addDrinkToCart={props.addDrinkToCart}/> */}
         </div>
 }
 

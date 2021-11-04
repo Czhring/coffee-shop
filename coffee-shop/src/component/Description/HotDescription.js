@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router"
 
 
 function HotDescription (props) {
     const [hotCoffeeDetail,setHotCoffeeDetail]=useState([])
-  
 
+    let {id} =useParams();
+    console.log(id)
     const makeHotDetailCall = () =>{
-        fetch(`https://api.sampleapis.com/coffee/hot/${props.match.params.id}`)
+        fetch(`https://api.sampleapis.com/coffee/hot/${id}`)
         .then((res) => res.json())
         .then((data)=>{
             setHotCoffeeDetail(data)
@@ -17,13 +19,13 @@ function HotDescription (props) {
     },[])
 
     let coffeeDetail = ''
-    if(props.match.params.id)
+    if(id)
             coffeeDetail = 
         <div>
             <h1>{hotCoffeeDetail.title}</h1>
             <p>{hotCoffeeDetail.description}</p>
             <p>{hotCoffeeDetail.ingredients}</p>
-            <button onClick={()=>props.addDrinkToCart()}>Add to Cart</button>
+            <button onClick={()=>props.addDrinkToCart(hotCoffeeDetail)}>Add to Cart</button>
         </div>
     
     

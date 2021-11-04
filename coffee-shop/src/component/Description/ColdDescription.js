@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router"
 function ColdDescription (props) {
         const [icedCoffeeDetail,setIcedCoffeeDetail]=useState([])
-        console.log(props)
-    
+  
+        let {id} =useParams();
+
         const makeIcedDetailCall = () =>{
-            fetch(`https://api.sampleapis.com/coffee/iced/${props.match.params.id}`)
+            fetch(`https://api.sampleapis.com/coffee/iced/${id}`)
             .then((res) => res.json())
             .then((data)=>{
                 setIcedCoffeeDetail(data)
@@ -13,15 +15,16 @@ function ColdDescription (props) {
         useEffect(()=> {
             makeIcedDetailCall()
         },[])
-    
+        
+
         let coffeeDetail = ''
-        if(props.match.params.id)
+        if(id)
                 coffeeDetail = 
             <div>
                 <h1>{icedCoffeeDetail.title}</h1>
                 <p>{icedCoffeeDetail.description}</p>
                 <p>{icedCoffeeDetail.ingredients}</p>
-                <button onClick={()=>props.addDrinkToCart()}>Add to Cart</button>
+                <button onClick={()=>props.addDrinkToCart(icedCoffeeDetail)}>Add to Cart</button>
             </div>
         
         

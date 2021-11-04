@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button'
 function Cart (props){
     console.log(props)
     let myDrink = ''
@@ -16,7 +17,7 @@ function Cart (props){
     <div>
        <h1> My Cart</h1>
        <p>{myDrink}</p>
-    
+        <Button variant="dark">Check Out</Button>{' '}
     </div>
     
 )
