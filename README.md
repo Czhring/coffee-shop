@@ -69,14 +69,14 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-|  Set up the components | L | 1 hrs| hrs | hrs |
-| Make an connection with each other | M | 2hrs| hrs | hrs |
-|  Set up the structure for each page | H | 2 hrs| hrs | hrs |
-|  Make API Wokring | H | 3 hrs| hrs | hrs |
-|  Let API working on all the page  | H | 3 hrs| hrs | hrs |
-| Total | H | 11hrs| hrs | hrs |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+|  Set up the components | L | 1 hrs | 2 hrs |
+| Make an connection with each other | M | 2hrs| 2 hrs |
+|  Set up the structure for each page | H | 2 hrs| 2hrs |
+|  Make API Wokring | H | 3 hrs| 3 hrs |
+|  Let API working on all the page  | H | 3 hrs| 4+ 4 hrs |
+| Total | H | 11hrs|  17 hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
