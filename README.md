@@ -70,7 +70,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 |  Set up the components | L | 1 hrs | 2 hrs |
 | Make an connection with each other | M | 2hrs| 2 hrs |
 |  Set up the structure for each page | H | 2 hrs| 2hrs |
