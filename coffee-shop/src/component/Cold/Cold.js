@@ -30,7 +30,7 @@ function Cold (props) {
         <h2>Cold Drink</h2>
         <img src={photo} alt="iced coffee image"/>
         {coldDrinkList}
-        {/* <ColdDescription addDrinkToCart={props.addDrinkToCart}/> */}
+
         </div>
 }
 

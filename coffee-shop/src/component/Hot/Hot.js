@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {Link,Route} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './Hot.css'
 
 function Hot (props) {
@@ -31,7 +31,6 @@ function Hot (props) {
         <h2>Hot Drink</h2>
         <img src={photo} alt="hot coffee image"/>
         {hotDrinkList}
-        {/* <HotDescription addDrinkToCart={props.addDrinkToCart}/> */}
         </div>
 }
 

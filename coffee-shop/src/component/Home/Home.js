@@ -1,7 +1,5 @@
 import Cold from "../Cold/Cold"
 import Hot from "../Hot/Hot"
-import Cart from "../Cart/Cart"
-import { useState } from "react/cjs/react.development"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -10,11 +8,9 @@ function Home () {
     let image = "https://img0.baidu.com/it/u=1253245222,4073951074&fm=26&fmt=auto"
     return (
     <div>
-        <Container fluid >
-  <Row>
-    <Col><img src={image}/></Col>
-  </Row>
-</Container>
+
+```<img classname="homepage" src={image}/>
+
 
         <Container>
   <Row>

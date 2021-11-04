@@ -21,16 +21,17 @@ function HotDescription (props) {
     let coffeeDetail = ''
     if(id)
             coffeeDetail = 
-        <div>
+        <div className ="Description">
             <h1>{hotCoffeeDetail.title}</h1>
             <p>{hotCoffeeDetail.description}</p>
+            <h5>Ingredient:</h5>
             <p>{hotCoffeeDetail.ingredients}</p>
             <button onClick={()=>props.addDrinkToCart(hotCoffeeDetail)}>Add to Cart</button>
         </div>
     
     
 
-    return <div>
+    return <div className="hotcoffee">
             {coffeeDetail}
         </div>
 }

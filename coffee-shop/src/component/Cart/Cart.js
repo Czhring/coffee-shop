@@ -22,7 +22,7 @@ function Cart (props){
     <div>
        <h1> My Cart</h1>
        <p>{myDrink}</p>
-        <Button variant="dark">Check Out</Button>{' '}
+        <Button variant="dark">Pay</Button>{' '}
     </div>
     
 )

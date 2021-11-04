@@ -1,15 +1,8 @@
 import React from 'react';
-import {Link ,Route, Switch}  from 'react-router-dom';
-import Cart from '../Cart/Cart';
-import Cold from '../Cold/Cold';
-import Home from '../Home/Home';
-import Hot from '../Hot/Hot';
-import HotDescription from "../Description/HotDescription";
-import ColdDescription from "../Description/ColdDescription";
+import {Link}  from 'react-router-dom';
 import  Navbar from 'react-bootstrap/Navbar';
 import { Nav} from 'react-bootstrap';
 import { Container} from 'react-bootstrap';
-import {NavDropdown} from 'react-bootstrap'
 import './Header.css'
 function Header () {
     return (

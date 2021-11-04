@@ -12,10 +12,9 @@ a{
     font-size: 28px;
 }
 a:hover{
-    background-color: lightslategray;
+    background-color: white;
 }
 img{
-    margin-left: 100px;
-    margin-right: 100px;
-    max-width: 75%;
+
+    max-width: 50%;
 }
