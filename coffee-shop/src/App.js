@@ -27,14 +27,6 @@ function App() {
   return (
     <div className="App">
         <Header />
-        {/* <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route exact path= '/hot' component={Hot}/>
-            <Route path='/hot/:id' component = {HotDescription}/>
-            <Route exact path= '/iced' component={Cold}/>
-            <Route path='/iced/:id' component ={ColdDescription}/>
-            <Route exact path='/cart' render={() => <Cart removeDrinkFromList={removeDrinkFromList} drink={drinkList}/>}/>
-        </Switch> */}
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path= '/hot' component={Hot}/>
