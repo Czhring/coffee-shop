@@ -3,7 +3,7 @@
 ## Project Links
 
 - [https://github.com/Czhring/project2.git]()
-- [add your deployment link]()
+- http://czhring.github.io/coffee-shop/
 
 ## Project Description
 
