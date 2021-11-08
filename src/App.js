@@ -8,7 +8,7 @@ import Cold from './component/Cold/Cold';
 import Cart from './component/Cart/Cart';
 import HotDescription from './component/Description/HotDescription';
 import ColdDescription from './component/Description/ColdDescription';
-import { useState } from "react/cjs/react.development"
+import { useState } from "react"
 
 
 function App() {
